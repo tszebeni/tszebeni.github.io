@@ -1,0 +1,23 @@
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+.cont {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+
+.cont span {
+    vertical-align: top;
+    word-wrap: initial;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
