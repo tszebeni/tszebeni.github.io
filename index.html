@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textflow examples</title>
+    <link rel="stylesheet" type="text/css" href="styles/textflow-example.css">
+</head>
+<body>
+    <h1><a href="khaliy.github.io/textflow.html">Textflow examples</a></h1>
+    <p>You can edit the text inside the boxes to see how it resizes the text.</p>
+    <p>You can also modify the behavior via CSS if you need (like word-wrap, positioning...)</p>
+    <div class="cont">
+        <span contentEditable>Lorem</span>
+    </div>
+
+    <div class="cont">
+        <span contentEditable>Lorem ipsum dolor</span>
+    </div>
+
+    <div class="cont">
+        <span contentEditable>Lorem ipsum dolor sit amet</span>
+    </div>
+
+    <div class="cont">
+        <span contentEditable>Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+    </div>
+
+    <div class="cont">
+       <span contentEditable>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
+    </div>
+
+    <div class="cont" title="data-min: 1">
+        <span contentEditable data-min="1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</span>
+    </div>
+
+    <p>This page is a demo page to demonstrate my <a href="https://github.com/khaliy/textflow">textflow plugin for jquery</a></p>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/textflow.jquery.min.js"></script>
+    <script>
+    $(function () {
+        $('[contentEditable]').on('input change', function () {
+            $(this).textflow();
+        }).textflow();;
+    });
+
+    </script>
+</body>
+</html>
